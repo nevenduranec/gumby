@@ -1,0 +1,22 @@
+{
+  "name": "gumby",
+  "version": "0.0.0",
+  "authors": [
+    "Neven Đuranec <n3v3n@server.hr>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gumby": "https://github.com/GumbyFramework/Gumby.git#~2.6.4",
+    "gumby-images": "~1.1.1"
+  }
+}
