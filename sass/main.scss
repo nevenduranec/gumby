@@ -11,5 +11,10 @@ li {
   min-height: 300px;
   height: auto;
   background: blue;
-  color: red;
+  color: #fff;
+}
+
+h2 {
+    background: blue;
+    @include shape('pill-left', '100%');
 }

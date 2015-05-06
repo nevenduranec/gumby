@@ -7446,7 +7446,7 @@ li {
   min-height: 300px;
   height: auto;
   background: blue;
-  color: red;
+  color: #fff;
 }
 @media only screen and (min-width: 0px) {
   /* line 9, ../sass/main.scss */
@@ -7465,4 +7465,12 @@ li {
   li {
     width: 25%;
   }
+}
+
+/* line 17, ../sass/main.scss */
+h2 {
+  background: blue;
+  -moz-border-radius: 500px 0 0 500px;
+  -webkit-border-radius: 500px;
+  border-radius: 500px 0 0 500px;
 }
