@@ -1,20 +1,51 @@
 @import "gumby";
 
-
-@include respond(all-phones) {
-  /* Your font is so big, it's absurd! */
-  h1,h2,h3,h4,h5,h6 {  @include font-size($absurd); }
+.Container {
+    @include row();
 }
 
-li {
-  @include fancytiles(4,2,1);
-  min-height: 300px;
-  height: auto;
-  background: blue;
-  color: #fff;
+section {
+    @include row();
 }
 
-h2 {
-    background: blue;
-    @include shape('pill-left', '100%');
+article {
+    @include column(8);
+}
+
+aside {
+    @include column(4);
+}
+
+.columns, .tiles > li, .Fancy-tiles li {
+    background: #e9e9e9;
+    min-height: 38px;
+    border: 1px solid #c9c9c9;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Fancy-tiles li {
+    @include fancytiles(4,2,1, '300px', '700px', '1000px');
+    min-height: 300px;
+    height: auto;
+}
+
+
+h1.example3 {
+    text-align: center;
+    color: white;
+    background: white;
+    @include transition(all .5s);
+}
+
+h1.example3.onscreen {
+    background: #b83d78;
+}
+
+h1.example3.offbottom {
+    background: #440000;
+}
+
+h1.example3.offtop {
+    background: #1b0044;
 }

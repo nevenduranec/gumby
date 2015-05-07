@@ -38,108 +38,271 @@
 </head>
 <body>
 
-    <h1>Gumby</h1>
+    <div class="Container">
 
-    <h2>livereload!!!</h2>
+        <h1>Gumby!</h1>
 
-    <ul>
-        <li>a</li>
-        <li>b</li>
-        <li>c</li>
-        <li>d</li>
-        <li>e</li>
-    </ul>
-
-    <div class="medium primary btn">
-        <a href="#">Primary</a>
     </div>
 
-    <script src="bower_components/gumby/js/libs/jquery-1.10.1.min.js"></script>
+    <section>
+
+        <article>
+            <h2>Article</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique fuga in maxime itaque iure id optio non eveniet veniam nesciunt officiis autem hic, pariatur animi sapiente laboriosam quam voluptatibus tempora.</p>
+        </article>
+
+        <aside>
+            <h2>Aside</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates consequatur reprehenderit rem facere expedita nisi enim, numquam repudiandae consequuntur quo assumenda nobis tenetur facilis dolorem fuga minima eaque est! Molestias.</p>
+        </aside>
+
+    </section>
+
+    <div class="row">
+
+        <h2>Grid</h2>
+
+        <div class="row">
+
+            <div class="twelve columns">
+                <p>12 columns</p>
+            </div>
+
+        </div>
+        <div class="row">
+        <div class="eleven columns">
+        <p>11 columns</p>
+        </div>
+        <div class="one columns">
+        <p>1</p>
+        </div>
+        </div>
+        <div class="row">
+        <div class="ten columns">
+        <p>10 columns</p>
+        </div>
+        <div class="two columns">
+        <p>2</p>
+        </div>
+        </div>
+        <div class="row">
+        <div class="nine columns">
+        <p>9 columns</p>
+        </div>
+        <div class="three columns">
+        <p>3 columns</p>
+        </div>
+        </div>
+        <div class="row">
+        <div class="eight columns">
+        <p>8 columns</p>
+        </div>
+        <div class="four columns">
+        <p>4 columns</p>
+        </div>
+        </div>
+        <div class="row">
+        <div class="seven columns">
+        <p>7 columns</p>
+        </div>
+        <div class="five columns">
+        <p>5 columns</p>
+        </div>
+        </div>
+        <div class="row">
+        <div class="six columns">
+        <p>6 columns</p>
+        </div>
+        <div class="six columns">
+        <p>6 columns</p>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="Container">
+
+        <h2>Tiles</h2>
+
+        <ul class="two_up tiles">
+            <li>Two Up</li>
+            <li>Two Up</li>
+        </ul>
+
+        <ul class="three_up tiles">
+            <li>Three Up</li>
+            <li>Three Up</li>
+            <li>Three Up</li>
+        </ul>
+
+        <ul class="four_up tiles">
+            <li>Four Up</li>
+            <li>Four Up</li>
+            <li>Four Up</li>
+            <li>Four Up</li>
+        </ul>
+
+        <ul class="five_up tiles">
+            <li>Five Up</li>
+            <li>Five Up</li>
+            <li>Five Up</li>
+            <li>Five Up</li>
+            <li>Five Up</li>
+        </ul>
+
+    </div>
+
+
+    <div class="Container">
+
+        <h2>Fancy tiles, yay!</h2>
+
+        <ul class="Fancy-tiles">
+            <li>Five Up</li>
+            <li>Five Up</li>
+            <li>Five Up</li>
+            <li>Five Up</li>
+        </ul>
+
+    </div>
+
+
+    <div class="Container">
+
+        <h2>Responsive images</h2>
+
+        <img gumby-default="/img/img_silence-mobile.jpg" gumby-media="only screen and (min-width: 960px)|/img/img_silence-desktop.jpg, only screen and (min-width: 480px) and (max-width: 959px)|/img/img_silence-tablet.jpg, only screen and (max-width: 479px)|/img/img_silence-mobile.jpg"  />
+
+    </div>
+
+
+
+    <div class="Container">
+
+        <h2>Conditional loading of html (<a href="http://responsivecomments.com/">Responsive comments</a>)</h2>
+
+        <div gumby-comment-media="(min-width: 769px)">
+
+            <!-- <div style="width: 100px; height: 100px; background: red; color: #fff; margin: 20px;">Any content can go in here</div> -->
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="Container">
+
+        <h2>Inview - scroll me baby!</h2>
+
+        <h1 class="inview example3" gumby-classname="onscreen|offbottom|offtop" gumby-offset="200">Hi there! :)</h1>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <!-- brrrrr it's cold here -->
+
+    </div>
+
+
+
+
+
+    <div class="Container">
+
+        <h2>Shuffle</h2>
+
+        <div class="row" gumby-shuffle="only screen and (max-width: 860px) and (min-width: 768px)|2-1-0,only screen and (max-width: 767px)|1-0-2">
+
+            <div class="four columns">
+                <h1>1</h1>
+            </div>
+
+            <div class="four columns">
+                <h1>2</h1>
+            </div>
+
+            <div class="four columns">
+                <h1>3</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Grab Google CDN's jQuery, fall back to local if offline -->
+    <!-- 2.0 for modern browsers, 1.10 for .oldie -->
+    <script>
+        var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+        if(!oldieCheck) {
+            document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+        } else {
+            document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+        }
+        if(!window.jQuery) {
+            if(!oldieCheck) {
+                document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
+            } else {
+                document.write('<script src="js/libs/jquery-1.10.1.min.js"><\/script>');
+            }
+        }
+    </script>
+
+
+    <!--
+    Include gumby.js followed by UI modules followed by gumby.init.js
+    Or concatenate and minify into a single file -->
+    <script gumby-touch="js/libs" src="js/libs/gumby.js" gumby-debug></script>
+    <script src="js/libs/ui/gumby.retina.js"></script>
+    <script src="js/libs/ui/gumby.fixed.js"></script>
+    <script src="js/libs/ui/gumby.skiplink.js"></script>
+    <script src="js/libs/ui/gumby.toggleswitch.js"></script>
+    <script src="js/libs/ui/gumby.checkbox.js"></script>
+    <script src="js/libs/ui/gumby.radiobtn.js"></script>
+    <script src="js/libs/ui/gumby.tabs.js"></script>
+    <script src="js/libs/ui/gumby.navbar.js"></script>
+    <script src="js/libs/ui/jquery.validation.js"></script>
+    <script src="js/libs/gumby.init.js"></script>
+
+
 
     <!-- bower:js -->
-    <script src="bower_components/gumby/js/libs/gumby.min.js"></script>
     <script src="bower_components/gumby-images/gumby.images.js"></script>
+    <script src="bower_components/gumby-comments/gumby.comments.js"></script>
+    <script src="bower_components/gumby-inview/gumby.inview.js"></script>
+    <script src="bower_components/gumby-shuffle/gumby.shuffle.js"></script>
     <!-- endbower -->
 
-    <script src="//localhost:35729/livereload.js"></script>
-
-
-
-
-  <!-- Grab Google CDN's jQuery, fall back to local if offline -->
-  <!-- 2.0 for modern browsers, 1.10 for .oldie -->
-  <script>
-  var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-  if(!oldieCheck) {
-    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
-  } else {
-    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
-  }
-  </script>
-  <script>
-  if(!window.jQuery) {
-    if(!oldieCheck) {
-      document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
-    } else {
-      document.write('<script src="js/libs/jquery-1.10.1.min.js"><\/script>');
+    <!--
+    Google's recommended deferred loading of JS
+    gumby.min.js contains gumby.js, all UI modules and gumby.init.js
+    <script type="text/javascript">
+    function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "js/libs/gumby.min.js";
+    document.body.appendChild(element);
     }
-  }
-  </script>
+    if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+    </script> -->
 
-  <!--
-  Include gumby.js followed by UI modules followed by gumby.init.js
-  Or concatenate and minify into a single file -->
-  <script gumby-touch="js/libs" src="js/libs/gumby.js"></script>
-  <script src="js/libs/ui/gumby.retina.js"></script>
-  <script src="js/libs/ui/gumby.fixed.js"></script>
-  <script src="js/libs/ui/gumby.skiplink.js"></script>
-  <script src="js/libs/ui/gumby.toggleswitch.js"></script>
-  <script src="js/libs/ui/gumby.checkbox.js"></script>
-  <script src="js/libs/ui/gumby.radiobtn.js"></script>
-  <script src="js/libs/ui/gumby.tabs.js"></script>
-  <script src="js/libs/ui/gumby.navbar.js"></script>
-  <script src="js/libs/ui/jquery.validation.js"></script>
-  <script src="js/libs/gumby.init.js"></script>
-
-  <!--
-  Google's recommended deferred loading of JS
-  gumby.min.js contains gumby.js, all UI modules and gumby.init.js
-  <script type="text/javascript">
-  function downloadJSAtOnload() {
-  var element = document.createElement("script");
-  element.src = "js/libs/gumby.min.js";
-  document.body.appendChild(element);
-  }
-  if (window.addEventListener)
-  window.addEventListener("load", downloadJSAtOnload, false);
-  else if (window.attachEvent)
-  window.attachEvent("onload", downloadJSAtOnload);
-  else window.onload = downloadJSAtOnload;
-  </script> -->
-
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Change UA-XXXXX-X to be your site's ID -->
-  <!--<script>
-  window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-  Modernizr.load({
-    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-  });
-  </script>-->
-
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-     chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7 ]>
-  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 
-
-
-
-
+    <script src="//localhost:35729/livereload.js"></script>
 
 
 

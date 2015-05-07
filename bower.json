@@ -16,7 +16,9 @@
     "tests"
   ],
   "dependencies": {
-    "gumby": "https://github.com/GumbyFramework/Gumby.git#~2.6.4",
-    "gumby-images": "~1.1.1"
+    "gumby-images": "~1.1.1",
+    "gumby-comments": "~1.0.0",
+    "gumby-inview": "~1.0.3",
+    "gumby-shuffle": "~1.1.0"
   }
 }
