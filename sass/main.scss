@@ -1,3 +1,4 @@
+@import "bourbon/bourbon";
 @import "gumby";
 
 .Container {
@@ -48,4 +49,9 @@ h1.example3.offbottom {
 
 h1.example3.offtop {
     background: #1b0044;
+}
+
+.is-active {
+    background: red;
+    color: #fff;
 }

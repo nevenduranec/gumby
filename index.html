@@ -234,6 +234,96 @@
 
 
 
+    <div class="Container">
+
+        <h2>Toggle</h2>
+
+        <div id="something" class="is-active">something!</div>
+        <div class="somethingelse">somethingelse!</div>
+
+        <a href="#" class="toggle" gumby-trigger="#something" gumby-classname="is-active">Toggle #Something!</a>
+        <a href="#" class="toggle" gumby-trigger="#something | .somethingelse" gumby-classname="is-active">Toggle</a>
+
+    </div>
+
+
+
+    <div class="Container">
+
+        <h2>forms</h2>
+
+        <form>
+            <div class="row">
+            <ul>
+            <li class="field">
+              <div class="picker">
+                <select>
+                  <option value="#" disabled>Favorite Doctor…</option>
+                  <option>Colin Baker</option>
+                  <option>Sylvester McCoy</option>
+                  <option>Paul McGann</option>
+                  <option>Christopher Eccleston</option>
+                  <option>David Tennant</option>
+                  <option>Matt Smith</option>
+                </select>
+              </div>
+            </li>
+            <li class="field">
+              <label class="radio checked" for="radio1">
+                <input name="radio" id="radio1" value="1" type="radio" checked="checked">
+                <span></span> Radio Button 1
+              </label>
+              <label class="radio" for="radio2">
+                <input name="radio" id="radio2" value="2" type="radio">
+                <span></span> Radio Button 2
+              </label>
+            </li>
+            <li class="field">
+              <label class="checkbox checked" for="check1">
+                <input name="checkbox[]" id="check1" value="1" type="checkbox" checked="checked">
+                <span></span> Checkbox 1
+              </label>
+              <label class="checkbox" for="check2">
+                <input name="checkbox[]" id="check2" value="2" type="checkbox">
+                <span></span> Checkbox 2
+              </label>
+            </li>
+            </ul>
+
+
+              <ul>
+                <li class="field">
+                  <label class="inline" for="text1">Label 1</label>
+                  <input class="wide text input" id="text1" type="text" placeholder="wide input" />
+                </li>
+                <li class="field">
+                  <label class="inline" for="text2">Label 2</label>
+                  <input class="wide password input" id="text2" type="password" placeholder="wide input" />
+                </li>
+              </ul>
+
+
+
+            <ul>
+              <li class="field">
+                <label class="block" for="text">Label 1</label>
+                <input class="input text" type="text" placeholder="Text input" />
+              </li>
+              <li class="field">
+                <input class="input" type="email" placeholder="Email input" />
+              </li>
+              <li class="field">
+                <input class="input" type="password" placeholder="Password input" />
+              </li>
+              <li class="field">
+                <textarea class="input textarea" placeholder="Textarea"></textarea>
+              </li>
+            </ul>
+
+            </div>
+        </form>
+    </div>
+
 
 
 
