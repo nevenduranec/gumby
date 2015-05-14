@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
+    "gumby": "~2.6.4",
     "gumby-images": "~1.1.1",
     "gumby-comments": "~1.0.0",
     "gumby-inview": "~1.0.3",
